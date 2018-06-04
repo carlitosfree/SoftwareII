@@ -17,7 +17,7 @@
     <form id="form1" runat="server">
     
         
-        <div class="auto-style1" style="background-position: 2% 20%; background-size: 1500px 1360px; background-image: url('App_Themes/desktop.png'); background-repeat: no-repeat; background-attachment: scroll;" width: 1048; >
+        <div class="auto-style1" style="background-position: 2% 20%; background-size: 1500px 1360px; background-image: url('App_Themes/rosas2.jpg'); background-repeat: no-repeat; background-attachment: scroll;" width: 1048; >
         
             <asp:Menu ID="Menu2" runat="server"  DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.7em" ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="20px" >
             <DynamicHoverStyle BackColor="White" ForeColor="#9933FF" />
@@ -25,10 +25,8 @@
 
 
             <Items>
-                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home2.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="Patient Update" Value="Patient Update"></asp:MenuItem>
-                <asp:MenuItem Text="Discharge" Value="Discharge"></asp:MenuItem>
-                <asp:MenuItem Text="Doctors Update" Value="Doctors Update"></asp:MenuItem>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Facturación" Value="Facturación"></asp:MenuItem>
             </Items>
             
          <StaticMenuItemStyle HorizontalPadding="30px" />  

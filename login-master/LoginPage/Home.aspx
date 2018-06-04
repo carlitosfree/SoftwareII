@@ -15,7 +15,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="auto-style1" style="background-position: 2% 20%; background-size: 1500px 1360px; background-image: url('App_Themes/desktop.png'); background-repeat: no-repeat; background-attachment: scroll;" width: 1048; >
+    <div class="auto-style1" style="background-position: 2% 20%; background-size: 1500px 1360px; background-image: url('App_Themes/rosas.png'); background-repeat: no-repeat; background-attachment: scroll;" width: 1048; >
         <asp:Menu ID="Menu1" runat="server"  DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.7em" ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="20px" >
             <DynamicHoverStyle BackColor="White" ForeColor="#9933FF" />
             <DynamicMenuItemStyle HorizontalPadding="20px" VerticalPadding="2px" ItemSpacing="10px"  />
