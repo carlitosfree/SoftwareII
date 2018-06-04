@@ -13,7 +13,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="auto-style1" style="background-color: #DFEAFF">
+    <div class="auto-style1:center" style="background-color: #DFEAFF; height: 340px; width: 433px;">
     
         <br />
         <asp:Menu ID="Menu1" runat="server" BackColor="White" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="20px">
