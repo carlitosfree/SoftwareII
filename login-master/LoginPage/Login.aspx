@@ -49,7 +49,7 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtPassword" ErrorMessage="Please enter password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
         <br />
         <br />
-        <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />
+        <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" style="height: 26px" />
         <br />
         <br />
         <br />

@@ -30,8 +30,8 @@ namespace LoginPage
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("ronald", username);
-                cmd.Parameters.AddWithValue("123", password);
+                cmd.Parameters.AddWithValue("@Username", username);
+                cmd.Parameters.AddWithValue("@Password", password);
                 conn.Open();
 
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -47,7 +47,7 @@ namespace LoginPage
                 }
                 else
                 {
-                    lblMessage.Text = "Your Username or password didn't match.";
+                    lblMessage.Text = "COntraseña incorrecta";
                     lblMessage.ForeColor = Color.Red;
 
 
