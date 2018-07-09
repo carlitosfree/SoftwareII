@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace Model.Dao
 {
-    public class VendedorDao : Obligatorio<Vendedor>
+    public class VendedorDao : Obligatorio<Proveedor>
     {
         private  ConexionDB objConexionDB;
         private SqlCommand comando;
@@ -17,9 +17,9 @@ namespace Model.Dao
         {
             objConexionDB = ConexionDB.saberEstado();
         }
-        public void create(Vendedor objVendedor)
+        public void create(Proveedor objVendedor)
         {
-            string create = "insert into vendedor values('"+ objVendedor.IdVendedor+ "','" + objVendedor.Nombre + "','" + objVendedor.Appaterno + "','" + objVendedor.Apmaterno + "','" + objVendedor.Dni + "','" + objVendedor.Telefono + "')";
+            string create = "insert into vendedor values('"+ objVendedor.IdVendedor+ "','" + objVendedor.Nombre + "','" + objVendedor.Appaterno + "','" + objVendedor.Apmaterno + "','" + objVendedor.Cedula + "','" + objVendedor.Telefono + "')";
             try
             {
                 comando = new SqlCommand(create, objConexionDB.getCon());
@@ -38,7 +38,7 @@ namespace Model.Dao
             }
         }
 
-        public void delete(Vendedor objVendedor)
+        public void delete(Proveedor objVendedor)
         {
             string delete = "delete from vendedor where idVendedor='" + objVendedor.IdVendedor + "'";
             try
@@ -59,7 +59,7 @@ namespace Model.Dao
             }
         }
 
-        public bool find(Vendedor objVendedor)
+        public bool find(Proveedor objVendedor)
         {
             bool hayRegistros;
             string find = "select*from vendedor where idVendedor='" + objVendedor.IdVendedor + "'";
@@ -74,7 +74,7 @@ namespace Model.Dao
                     objVendedor.Nombre = reader[1].ToString();
                     objVendedor.Appaterno = reader[2].ToString();
                     objVendedor.Apmaterno = reader[3].ToString();
-                    objVendedor.Dni = reader[4].ToString();
+                    objVendedor.Cedula = reader[4].ToString();
                     objVendedor.Telefono = reader[5].ToString();
                     objVendedor.Estado = 99;
                 }else
@@ -96,9 +96,9 @@ namespace Model.Dao
             return hayRegistros;
         }
 
-        public List<Vendedor> findAll()
+        public List<Proveedor> findAll()
         {
-            List<Vendedor> listaVendedores = new List<Vendedor>();
+            List<Proveedor> listaVendedores = new List<Proveedor>();
             string find = "select*from vendedor order by nombre asc,apMaterno asc,apPaterno asc";
             try
             {
@@ -107,12 +107,12 @@ namespace Model.Dao
                 reader = comando.ExecuteReader();                
                 while (reader.Read())
                 {
-                    Vendedor objVendedor = new Vendedor();
+                    Proveedor objVendedor = new Proveedor();
                     objVendedor.IdVendedor = reader[0].ToString();
                     objVendedor.Nombre = reader[1].ToString();
                     objVendedor.Appaterno = reader[2].ToString();
                     objVendedor.Apmaterno = reader[3].ToString();
-                    objVendedor.Dni = reader[4].ToString();
+                    objVendedor.Cedula = reader[4].ToString();
                     objVendedor.Telefono = reader[5].ToString();
                     listaVendedores.Add(objVendedor);
                 }
@@ -132,9 +132,9 @@ namespace Model.Dao
             return listaVendedores;
         }
 
-        public void update(Vendedor objVendedor)
+        public void update(Proveedor objVendedor)
         {
-            string update = "update vendedor set  nombre='" + objVendedor.Nombre + "',apPaterno='" + objVendedor.Appaterno + "',apMaterno='" + objVendedor.Apmaterno + "',dni='" + objVendedor.Dni + "',telefono='" + objVendedor.Telefono + "' where idVendedor='" + objVendedor.IdVendedor + "'";
+            string update = "update vendedor set  nombre='" + objVendedor.Nombre + "',apPaterno='" + objVendedor.Appaterno + "',apMaterno='" + objVendedor.Apmaterno + "',dni='" + objVendedor.Cedula + "',telefono='" + objVendedor.Telefono + "' where idVendedor='" + objVendedor.IdVendedor + "'";
             try
             {
                 comando = new SqlCommand(update, objConexionDB.getCon());

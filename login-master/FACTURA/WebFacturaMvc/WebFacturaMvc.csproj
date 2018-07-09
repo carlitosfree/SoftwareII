@@ -50,11 +50,13 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="Model.Entity">
-      <HintPath>..\Model.Neg\bin\Debug\Model.Entity.dll</HintPath>
+    <Reference Include="Model.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Model.Entity.dll</HintPath>
     </Reference>
-    <Reference Include="Model.Neg">
-      <HintPath>..\Model.Neg\bin\Debug\Model.Neg.dll</HintPath>
+    <Reference Include="Model.Neg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Model.Neg.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -212,6 +214,9 @@
     <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\VendedorController.cs" />
     <Compile Include="Controllers\VentaController.cs" />
+    <Compile Include="dbventasDataSet.cs">
+      <DependentUpon>dbventasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dbventasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

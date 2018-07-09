@@ -15,7 +15,7 @@ namespace Model.Entity
         private string apmaterno;
         
         private string appaterno;
-        private string dni;
+        private string cedula;
         private string direccion;
         private string telefono;
         private List<Venta> ventas;
@@ -88,17 +88,17 @@ namespace Model.Entity
             }
         }
         [Required(ErrorMessage = "Este Campo es Requerido")]
-        [Display(Name = "DNI")]
-        public string Dni
+        [Display(Name = "Cédula")]
+        public string Cedula
         {
             get
             {
-                return dni;
+                return cedula;
             }
 
             set
             {
-                dni = value;
+                cedula = value;
             }
         }
         [Required(ErrorMessage = "Este Campo es Requerido")]
@@ -152,13 +152,13 @@ namespace Model.Entity
             this.idCliente = idCliente;
         }
 
-        public Cliente(long idCliente, string nombre, string apmaterno, string appaterno, string dni, string direccion, string telefono)
+        public Cliente(long idCliente, string nombre, string apmaterno, string appaterno, string cedula, string direccion, string telefono)
         {
             this.idCliente = idCliente;
             this.Nombre = nombre;
             this.Apmaterno = apmaterno;
             this.Appaterno = appaterno;
-            this.Dni = dni;
+            this.Cedula = cedula;
             this.Direccion = direccion;
             this.Telefono = telefono;
         }

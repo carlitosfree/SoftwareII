@@ -33,8 +33,9 @@
     <Reference Include="Model.Dao">
       <HintPath>..\Model.Dao\bin\Debug\Model.Dao.dll</HintPath>
     </Reference>
-    <Reference Include="Model.Entity">
-      <HintPath>..\Model.Dao\bin\Debug\Model.Entity.dll</HintPath>
+    <Reference Include="Model.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Model.Entity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

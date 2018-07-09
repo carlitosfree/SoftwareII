@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Model.Entity
 {
-    public class Vendedor
+    public class Proveedor
     {
-        private string idVendedor;
+        private string idProveedor;
         private string nombre;
         private string appaterno;
         private string apmaterno;
-        private string dni;
+        private string cedula;
         private string telefono;
         private int estado;
 
@@ -20,12 +20,12 @@ namespace Model.Entity
         {
             get
             {
-                return idVendedor;
+                return idProveedor;
             }
 
             set
             {
-                idVendedor = value;
+                idProveedor = value;
             }
         }
 
@@ -55,16 +55,16 @@ namespace Model.Entity
             }
         }
 
-        public string Dni
+        public string Cedula
         {
             get
             {
-                return dni;
+                return cedula;
             }
 
             set
             {
-                dni = value;
+                cedula = value;
             }
         }
 
@@ -107,20 +107,20 @@ namespace Model.Entity
             }
         }
 
-        public Vendedor()
+        public Proveedor()
         {
             
         }
-        public Vendedor(string idVendedor)
+        public Proveedor(string idVendedor)
         {
-            this.idVendedor = idVendedor;
+            this.idProveedor = idVendedor;
         }
-        public Vendedor(string idVendedor, string appaterno, string apmaterno, string dni, string telefono)
+        public Proveedor(string idProveedor, string appaterno, string apmaterno, string cedula, string telefono)
         {
-            this.idVendedor = idVendedor;
+            this.idProveedor = idProveedor;
             this.Appaterno = appaterno;
             this.Apmaterno = apmaterno;
-            this.Dni = dni;
+            this.Cedula = cedula;
             this.Telefono = telefono;
         }
     }

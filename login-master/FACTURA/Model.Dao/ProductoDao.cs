@@ -182,7 +182,7 @@ namespace Model.Dao
         public List<Producto> findAllProductos(Producto objProducto)
         {
             List<Producto> listaProductos = new List<Producto>();
-            //string findAll = "select*from cliente where nombre='" + objCLiente.Nombre + "' or dni='" + objCLiente.Dni + "' or idCliente=" + objCLiente.IdCliente + " or apPaterno='" + objCLiente.Appaterno + "'";
+            //string findAll = "select*from cliente where nombre='" + objCLiente.Nombre + "' or dni='" + objCLiente.Cedula + "' or idCliente=" + objCLiente.IdCliente + " or apPaterno='" + objCLiente.Appaterno + "'";
             string findAll = "select* from producto where nombre like '%" + objProducto.Nombre + "%' or idProducto like '%" + objProducto.IdProducto + "%' or idCategoria like '%" + objProducto.Categoria + "%'";
             try
             {

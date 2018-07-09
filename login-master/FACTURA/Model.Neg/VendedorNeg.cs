@@ -254,6 +254,7 @@ namespace Model.Neg
 
             //todo bien
             objVendedor.Estado = 99;
+            
             objVendedorDao.update(objVendedor);
             return;
 

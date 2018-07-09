@@ -170,10 +170,10 @@ namespace WebFacturaMvc.Controllers
                     break;
 
                 case 50://campo dni vacio
-                    ViewBag.MensajeError = "Ingrese DNI del Cliente";
+                    ViewBag.MensajeError = "Ingrese Cédula del Cliente";
                     break;
                 case 5://error de dni
-                    ViewBag.MensajeError = "Ingrese un DNI Válido";
+                    ViewBag.MensajeError = "Ingrese una Cédula Válida";
                     break;
                 case 60://campod direccion vacio
                     ViewBag.MensajeError = "Ingrese Dirección del Cliente";
@@ -188,7 +188,7 @@ namespace WebFacturaMvc.Controllers
                     ViewBag.MensajeError = "No se permiten mas de 30 caracteres en al campo Teléfono";
                     break;
                 case 9://error de duplicidad
-                    ViewBag.MensajeError = "Numero de DNI [" + objCliente.Dni + "] ya esta asignado a un Cliente";
+                    ViewBag.MensajeError = "Numero de Cédula [" + objCliente.Dni + "] ya esta asignado a un Cliente";
                     break;
 
                 case 99://carrera registrada con exito
