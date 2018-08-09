@@ -118,8 +118,10 @@ namespace WebFacturaMvc.Controllers
                 //REGISTRO DE VENTA
                 Venta objVenta = new Venta(total, codigoCliente, idVendedor, Fecha, iva);
                 string codigoVenta = objVentaNeg.create(objVenta);
+             
                 if (codigoVenta == "" || codigoVenta == null)
                 {
+                    
                     mensaje = "ERROR AL REGISTRAR LA VENTA";
                 }else
                 {
