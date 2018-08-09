@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>The Exotic Rose</title>
+    <title>RoseSoft</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!--Importación de librerías-->
     <!-- Bootstrap 3.3.4 -->
@@ -35,9 +35,9 @@
         <!-- Logo -->
         <a href="./" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>S</b>V</span>
+          <span class="logo-mini"><b>R</b>S</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Ventas</b>"The Exotic Rose"</span>
+          <span class="logo-lg"><b>RoseSoft</b></span>
         </a>
 
         <!-- Header Navbar -->
@@ -156,7 +156,7 @@
       <?php else:?>
         <div class="login-box">
       <div class="login-logo">
-        <a href="./">Sistema<b>Ventas</b></a>
+        <a href="./">Rose<b>Soft</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <form action="./?action=processlogin" method="post">
